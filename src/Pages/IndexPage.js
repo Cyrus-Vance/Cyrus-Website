@@ -17,9 +17,7 @@ const gfm = require('remark-gfm')
 
 const markdown = `# 我的技术栈
 
-### Web应用后端开发
-
-.NET 5/.NET Core/.NET Framework + EntityFramework或NewLife.XCode
+Web应用后端开发：.NET 5/.NET Core/.NET Framework + EntityFramework或NewLife.XCode
 
 数据库构建：MySQL及其派生,如MariaDB + Redis
 
@@ -59,6 +57,10 @@ Web前端构建：React.js + Ant Design/Material Design + ECharts + react-router
 
 ### 2.海绵城市监测系统 - 前端设计、后端、数据服务端  
 
+### 3.Cyrus Process Launcher进程启动器 
+
+该作品是特殊时期用于辅助搭载了Windows Server系统的服务器进行开机相关进程管理的辅助工具。可用于Windows系统的自定义进程自启动、先后启动顺序自定等。
+
 `
 
 class IndexPage extends Component {
@@ -70,6 +72,7 @@ class IndexPage extends Component {
                         <div className="logo" />
                         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['index']}>
                             <Menu.Item key="index">首页</Menu.Item>
+                            <Menu.Item key="github"><a href="https://github.com/Cyrus-Vance" target="_blank" rel="noreferrer">GitHub</a></Menu.Item>
                         </Menu>
                     </Header>
                     <Content style={{ padding: '0 150px' }}>
